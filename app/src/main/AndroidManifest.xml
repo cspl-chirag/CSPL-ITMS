@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.hp.superadminitms">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+    <permission
+        android:name="${applicationId}.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="${applicationId}.permission.C2D_MESSAGE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="31">
+        <activity
+            android:name=".Activity.Dashboards.Admin_SuperAdminDashboard"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.LoginActivity"
+            android:exported="true"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Activity.SABusRoutine"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.Dashboards.StoreDashboard"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.StoreAddBreakdownEntryActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.StoreAddJobEntryActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.StoreBreakdownListActiviy"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.StoreJobListActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.StoreUpdateBreakdownActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.BusLoginListOPActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.BusLoginOPActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.Dashboards.OperatorDashboard"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.BusLogoutOPActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.BusLogoutListOPActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.FuelBusOPActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.FuelEntryOPActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.ShiftChangeOPActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.UpdateBusLoginOPActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.UpdateBusLogoutOPActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.UpdateFuelOPActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+
+<!--        <service-->
+<!--            android:name=".Service.MyFirebaseInstanceIDService"-->
+<!--            android:exported="false"-->
+<!--            android:stopWithTask="false">-->
+<!--            <intent-filter>-->
+<!--                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />-->
+<!--            </intent-filter>-->
+<!--        </service>-->
+
+<!--        <service-->
+<!--            android:name=".Service.MyFirebaseMessagingService"-->
+<!--            android:exported="false"-->
+<!--            android:stopWithTask="true">-->
+<!--            <intent-filter>-->
+<!--                <action android:name="com.google.firebase.MESSAGING_EVENT" />-->
+<!--                <action android:name="com.google.android.c2dm.intent.RECEIVE" />-->
+<!--            </intent-filter>-->
+<!--        </service>-->
+
+<!--        <meta-data-->
+<!--            android:name="com.google.android.gms.version"-->
+<!--            android:value="@integer/google_play_services_version" />-->
+
+        <activity
+            android:name=".Activity.Menus.RTORelatedInformation"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.Dashboards.Stock_Dashboard"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.Stock_InwardEntryActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.Store_UpdateJobActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.Stock_DashboardEntries"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.Stock_OutwardEntryActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.Stock_AddPartActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.Menus.Stock_ReportsMenuActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.Admin_InwardReportActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.Admin_OutwardReportActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.Admin_PartReplacementReport"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.Menus.Admin_StaffAsigningKitReports"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.Admin_AvailabelStockActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.Menus.Admin_StaffDetailsActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.StaffListActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.ResignStaffMemberActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.ResignedStaffListActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.Menus.Admin_VehicleInfoActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.Admin_BusOnRoadActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.Admin_BusScheduleOverActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.Menus.Admin_ReportListActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.ReportBusLoginLogoutActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.ReportFuelActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".Activity.AddStoreActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".Activity.Dashboards.SuperVisor_Dashboard"
+            android:exported="false" />
+
+        <activity
+            android:name=".Activity.Menus.MaintananceListActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".Activity.Menus.RouteWiseReportsActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".Activity.RouteWiseBusReportActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".Activity.RouteWiseLoginLogoutReportActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".Activity.ReportBusWiseAverageActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".Activity.Menus.VehicleMaintananceHistoryActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".Activity.BusMaintananceHistoryActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".Activity.BuswisePartreplacedHistoryActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".Activity.AddDailySummaryActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".Activity.StockInawardListActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".Activity.StockInwardUpdateActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".Activity.AddAccidentEntryActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".Activity.StaffAssignKitEntryActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".Activity.StockOutwardListActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".Activity.StockOutwardUpdateActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".Activity.DailySummaryInfoActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".Activity.Menus.AccidentReportsActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".Activity.ReportAccidentBuswiseActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".Activity.ReportAccidentDatewiseActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".CustomeDesignActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".Activity.ReportStaffwiseKitAssignActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".Activity.ReportStaffwiseKitAssignHistoryActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".Activity.Staff_Offence_Entry_Activity"
+            android:exported="false" />
+
+        <activity
+            android:name=".Activity.Menus.FineReportsMenuActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".Activity.Report_StaffwiseFineReportActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".Activity.Report_StaffwiseFineHistoryActivity"
+            android:exported="false" />
+
+    </application>
+
+</manifest>

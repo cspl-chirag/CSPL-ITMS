@@ -1,0 +1,718 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/llRootLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    tools:context="com.example.hp.superadminitms.Activity.Store_UpdateJobActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include layout="@layout/toolbar" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <TextView
+        android:id="@+id/tvBusRegNo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/lato_regular"
+        android:text="XX XX XX XXXX"
+        android:textColor="@color/colorAccent"
+        android:textSize="18dp" />
+
+    <androidx.core.widget.NestedScrollView
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/bg_green_rounded_corner_ligh_bg8dp"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal"
+                            android:weightSum="1">
+
+                            <CheckBox
+                                android:id="@+id/cbIsPartReplacing"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:backgroundTint="@color/colorAccent"
+                                android:buttonTint="@color/colorAccent" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/lato_regular"
+                                android:text="If Partreplaced"
+                                android:textColor="@color/colorAccent" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/llPartReplacementSection"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:padding="3dp"
+                            android:visibility="visible">
+
+                            <androidx.recyclerview.widget.RecyclerView
+                                android:id="@+id/rvParts"
+                                android:layout_width="match_parent"
+                                android:layout_height="180dp"
+                                android:scrollbars="vertical" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:weightSum="2">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:gravity="center_vertical"
+                                    android:orientation="vertical"
+                                    android:padding="4dp">
+
+                                    <com.google.android.material.textfield.TextInputLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:textColorHint="@color/colorAccent">
+
+                                        <EditText
+                                            android:id="@+id/etOutwardDate"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="0dp"
+                                            android:background="#00000000"
+                                            android:fontFamily="@font/lato_regular"
+                                            android:hint="Outward Date"
+                                            android:letterSpacing="0.1"
+                                            android:maxLines="1"
+                                            android:padding="4dp"
+                                            android:singleLine="true"
+                                            android:textColor="#fff"
+                                            android:textColorHint="#fff"
+                                            android:textSize="13sp" />
+                                    </com.google.android.material.textfield.TextInputLayout>
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:gravity="center_vertical"
+                                    android:orientation="vertical"
+
+                                    android:padding="4dp">
+
+                                    <com.google.android.material.textfield.TextInputLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:textColorHint="@color/colorAccent">
+
+                                        <EditText
+                                            android:id="@+id/etOutwardTime"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="0dp"
+                                            android:background="#00000000"
+                                            android:fontFamily="@font/lato_regular"
+                                            android:hint="Outward Time"
+                                            android:letterSpacing="0.1"
+                                            android:maxLines="1"
+                                            android:padding="4dp"
+                                            android:singleLine="true"
+                                            android:textColor="#fff"
+                                            android:textColorHint="#fff"
+                                            android:textSize="13sp" />
+                                    </com.google.android.material.textfield.TextInputLayout>
+                                </LinearLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:background="@color/colorAccentText"></LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal"
+                                android:padding="4dp"
+                                android:weightSum="1">
+
+                                <com.google.android.material.textfield.TextInputLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:textColorHint="@color/colorAccent">
+
+                                    <EditText
+                                        android:id="@+id/etPersonName"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="0dp"
+                                        android:background="#00000000"
+                                        android:enabled="true"
+                                        android:fontFamily="@font/lato_regular"
+                                        android:hint="Person Name"
+                                        android:inputType="text"
+                                        android:letterSpacing="0.1"
+                                        android:maxLines="1"
+                                        android:padding="4dp"
+                                        android:singleLine="true"
+                                        android:textColor="#fff"
+                                        android:textColorHint="#fff"
+                                        android:textSize="13sp" />
+                                </com.google.android.material.textfield.TextInputLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:background="@color/colorAccentText"></LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal"
+                                android:padding="4dp"
+                                android:weightSum="1">
+
+                                <com.google.android.material.textfield.TextInputLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:textColorHint="@color/colorAccent">
+
+                                    <EditText
+                                        android:id="@+id/etCheckedBy"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="0dp"
+                                        android:background="#00000000"
+                                        android:enabled="true"
+                                        android:fontFamily="@font/lato_regular"
+                                        android:hint="Checked By"
+                                        android:inputType="text"
+                                        android:letterSpacing="0.1"
+                                        android:maxLines="1"
+                                        android:padding="4dp"
+                                        android:singleLine="true"
+                                        android:textColor="#fff"
+                                        android:textColorHint="#fff"
+                                        android:textSize="13sp" />
+                                </com.google.android.material.textfield.TextInputLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:background="@color/colorAccentText"></LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal"
+                                android:padding="4dp"
+                                android:weightSum="1">
+
+                                <com.google.android.material.textfield.TextInputLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:textColorHint="@color/colorAccent">
+
+                                    <EditText
+                                        android:id="@+id/etPartReplacedDesc"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="0dp"
+                                        android:background="#00000000"
+                                        android:enabled="true"
+                                        android:fontFamily="@font/lato_regular"
+                                        android:hint="Description"
+                                        android:inputType="text"
+                                        android:letterSpacing="0.1"
+                                        android:maxLines="1"
+                                        android:padding="4dp"
+                                        android:singleLine="true"
+                                        android:textColor="#fff"
+                                        android:textColorHint="#fff"
+                                        android:textSize="13sp" />
+                                </com.google.android.material.textfield.TextInputLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:background="@color/colorAccentText"></LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal"
+                                android:padding="4dp"
+                                android:weightSum="1">
+
+                                <com.google.android.material.textfield.TextInputLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:textColorHint="@color/colorAccent">
+
+                                    <EditText
+                                        android:id="@+id/etPartReplaceRemark"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="0dp"
+                                        android:background="#00000000"
+                                        android:enabled="true"
+                                        android:fontFamily="@font/lato_regular"
+                                        android:hint="Remark"
+                                        android:inputType="text"
+                                        android:letterSpacing="0.1"
+                                        android:maxLines="1"
+                                        android:padding="4dp"
+                                        android:singleLine="true"
+                                        android:textColor="#fff"
+                                        android:textColorHint="#fff"
+                                        android:textSize="13sp" />
+                                </com.google.android.material.textfield.TextInputLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:background="@color/colorAccentText"></LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:orientation="vertical"
+                                android:paddingBottom="5dp"
+                                android:paddingLeft="25dp"
+                                android:paddingRight="25dp"
+                                android:paddingTop="5dp">
+
+                                <TextView
+                                    android:id="@+id/btnSubmitParts"
+                                    android:layout_width="80dp"
+                                    android:layout_height="35dp"
+                                    android:background="@color/colorAccentText"
+                                    android:fontFamily="@font/lato_regular"
+                                    android:gravity="center"
+                                    android:letterSpacing="0.2"
+                                    android:padding="8dp"
+                                    android:text="Submit"
+                                    android:textColor="@color/colorAccent"
+                                    android:textSize="14sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/bg_green_rounded_corner_ligh_bg8dp"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:orientation="horizontal"
+                        android:padding="12dp"
+                        android:weightSum="1">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.7"
+                            android:fontFamily="@font/lato_regular"
+                            android:text="Job Date :"
+                            android:textColor="@color/colorAccent"
+                            android:textSize="13dp" />
+
+                        <TextView
+                            android:id="@+id/tvJobDate"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.3"
+                            android:fontFamily="@font/lato_regular"
+                            android:paddingLeft="4dp"
+                            android:paddingStart="10dp"
+                            android:text=""
+                            android:textColor="@color/white"
+                            android:textSize="13dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/colorAccentText"></LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:orientation="horizontal"
+                        android:padding="12dp"
+                        android:weightSum="1">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.7"
+                            android:fontFamily="@font/lato_regular"
+                            android:text="Problem :"
+                            android:textColor="@color/colorAccent"
+                            android:textSize="13dp" />
+
+                        <TextView
+                            android:id="@+id/tvProblem"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.3"
+                            android:fontFamily="@font/lato_regular"
+                            android:maxLines="3"
+                            android:paddingLeft="4dp"
+                            android:paddingStart="10dp"
+                            android:text=""
+                            android:textColor="@color/white"
+                            android:textSize="13dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/colorAccentText"></LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:orientation="horizontal"
+                        android:padding="12dp"
+                        android:weightSum="1">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.7"
+                            android:fontFamily="@font/lato_regular"
+                            android:text=" RouteNo :"
+                            android:textColor="@color/colorAccent"
+                            android:textSize="13dp" />
+
+                        <TextView
+                            android:id="@+id/tvRouteNo"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.3"
+                            android:fontFamily="@font/lato_regular"
+                            android:maxLines="3"
+                            android:paddingLeft="4dp"
+                            android:paddingStart="10dp"
+                            android:text=""
+                            android:textColor="@color/white"
+                            android:textSize="13dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/colorAccentText"></LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:orientation="horizontal"
+                        android:padding="12dp"
+                        android:weightSum="1">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.7"
+                            android:fontFamily="@font/lato_regular"
+                            android:text=" Driver :"
+                            android:textColor="@color/colorAccent"
+                            android:textSize="13dp" />
+
+                        <TextView
+                            android:id="@+id/tvDriver"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.3"
+                            android:fontFamily="@font/lato_regular"
+                            android:maxLines="3"
+                            android:paddingLeft="4dp"
+                            android:paddingStart="10dp"
+                            android:text=""
+                            android:textColor="@color/white"
+                            android:textSize="13dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/colorAccentText"></LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:padding="8dp"
+                        android:weightSum="1">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.7"
+                            android:fontFamily="@font/lato_regular"
+                            android:text="Problem :"
+                            android:textColor="@color/colorAccent"
+                            android:textSize="13dp" />
+
+                        <LinearLayout
+                            android:id="@+id/llCheckBox"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.3"
+                            android:orientation="vertical"></LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/colorAccentText"></LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:padding="4dp"
+                        android:weightSum="1">
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColorHint="@color/colorAccent">
+
+                            <EditText
+                                android:id="@+id/etSolvedDesc"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="0dp"
+                                android:background="#00000000"
+                                android:fontFamily="@font/lato_regular"
+                                android:hint="Solved Description"
+                                android:letterSpacing="0.1"
+                                android:maxLines="1"
+                                android:inputType="text"
+                                android:padding="4dp"
+                                android:singleLine="true"
+                                android:textColor="#fff"
+                                android:textColorHint="#fff"
+                                android:textSize="13sp" />
+                        </com.google.android.material.textfield.TextInputLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/colorAccentText"></LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:padding="4dp"
+                        android:weightSum="1">
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColorHint="@color/colorAccent">
+
+                            <EditText
+                                android:id="@+id/etSolvedBy"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="0dp"
+                                android:background="#00000000"
+                                android:fontFamily="@font/lato_regular"
+                                android:hint="SolvedBy"
+                                android:letterSpacing="0.1"
+                                android:maxLines="1"
+                                android:inputType="text"
+                                android:padding="4dp"
+                                android:singleLine="true"
+                                android:textColor="#fff"
+                                android:textColorHint="#fff"
+                                android:textSize="13sp" />
+                        </com.google.android.material.textfield.TextInputLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/colorAccentText"></LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:padding="4dp"
+                        android:visibility="gone"
+                        android:weightSum="1">
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColorHint="@color/colorAccent">
+
+                            <EditText
+                                android:id="@+id/etSelectedDate"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="0dp"
+                                android:background="#00000000"
+                                android:fontFamily="@font/lato_regular"
+                                android:hint="Solved Date"
+                                android:letterSpacing="0.1"
+                                android:maxLines="1"
+                                android:padding="4dp"
+                                android:singleLine="true"
+                                android:textColor="#fff"
+                                android:textColorHint="#fff"
+                                android:textSize="13sp" />
+                        </com.google.android.material.textfield.TextInputLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/colorAccentText"></LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:padding="4dp"
+                        android:weightSum="1">
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColorHint="@color/colorAccent">
+
+                            <EditText
+                                android:id="@+id/etSelectedTime"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="0dp"
+                                android:background="#00000000"
+                                android:fontFamily="@font/lato_regular"
+                                android:hint="Solved Time"
+                                android:letterSpacing="0.1"
+                                android:maxLines="1"
+                                android:padding="4dp"
+                                android:singleLine="true"
+                                android:textColor="#fff"
+                                android:textColorHint="#fff"
+                                android:textSize="13sp" />
+                        </com.google.android.material.textfield.TextInputLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/colorAccentText"></LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/colorAccentText"></LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="25dp"
+                        android:paddingRight="25dp"
+                        android:paddingTop="5dp">
+
+                        <TextView
+                            android:id="@+id/btnSubmit"
+                            android:layout_width="80dp"
+                            android:layout_height="35dp"
+                            android:background="@color/colorAccentText"
+                            android:fontFamily="@font/lato_regular"
+                            android:gravity="center"
+                            android:letterSpacing="0.2"
+                            android:padding="8dp"
+                            android:text="Submit"
+                            android:textColor="@color/colorAccent"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>
+
+

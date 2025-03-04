@@ -1,0 +1,506 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fuelEntryLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    tools:context="com.example.hp.superadminitms.Activity.FuelEntryOPActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include layout="@layout/toolbar" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <ScrollView
+        android:id="@+id/scrollFuelEntry"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="10dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:paddingTop="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="4dp"
+                    android:weightSum="1">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:textColorHint="@color/colorAccent">
+
+                        <EditText
+                            android:id="@+id/stationName"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="0dp"
+                            android:background="#00000000"
+                            android:enabled="false"
+                            android:fontFamily="@font/lato_regular"
+                            android:hint="Fuel Station Name"
+                            android:inputType="text"
+                            android:letterSpacing="0.1"
+                            android:padding="4dp"
+                            android:text="Josh Petroleum"
+                            android:textColor="#fff"
+                            android:textColorHint="#fff"
+                            android:textSize="13sp" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:textColorHint="@color/colorAccent">
+
+                        <EditText
+                            android:id="@+id/fuelDate"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="0dp"
+                            android:background="#00000000"
+                            android:fontFamily="@font/lato_regular"
+                            android:hint="Date"
+                            android:inputType="date"
+                            android:letterSpacing="0.1"
+                            android:padding="4dp"
+                            android:textColor="#fff"
+                            android:textColorHint="#fff"
+                            android:textSize="13sp" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginRight="6dp"
+                    android:background="@color/colorAccentText"></LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="7dp"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.7"
+                        android:fontFamily="@font/lato_regular"
+                        android:text="Fuel Type:"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="13sp" />
+
+                    <Spinner
+                        android:id="@+id/spnFuelType"
+                        android:backgroundTint="@color/colorAccentText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.6"
+                        android:fontFamily="@font/lato_regular"
+                        android:popupBackground="@color/colorPrimaryDark"
+                        android:scrollbars="none"
+                        android:spinnerMode="dropdown" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginRight="6dp"
+                    android:background="@color/colorAccentText"></LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="7dp"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.7"
+                        android:fontFamily="@font/lato_regular"
+                        android:text="Select Vehicle: "
+                        android:textColor="@color/colorAccent"
+                        android:textSize="13sp" />
+
+                    <com.example.hp.superadminitms.utils.SearchableSpinner
+                        android:id="@+id/spnBus"
+                        android:backgroundTint="@color/colorAccentText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.45"
+                        android:fontFamily="@font/lato_regular"
+                        android:popupBackground="@color/colorPrimaryDark"
+                        android:scrollbars="none"
+                        android:spinnerMode="dropdown" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginRight="6dp"
+                    android:background="@color/colorAccentText"></LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="4dp">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColorHint="@color/colorAccent">
+
+                        <EditText
+                            android:id="@+id/openingKm"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="0dp"
+                            android:background="#00000000"
+                            android:fontFamily="@font/lato_regular"
+                            android:hint="Odometer Reading"
+                            android:inputType="number"
+                            android:letterSpacing="0.1"
+                            android:padding="4dp"
+                            android:textColor="#fff"
+                            android:textColorHint="#fff"
+                            android:textSize="13sp" />
+                    </com.google.android.material.textfield.TextInputLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginRight="6dp"
+                    android:background="@color/colorAccentText"></LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="4dp">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColorHint="@color/colorAccent">
+
+                        <EditText
+                            android:id="@+id/fuelRate"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="0dp"
+                            android:background="#00000000"
+                            android:fontFamily="@font/lato_regular"
+                            android:hint="Fuel Rate"
+                            android:inputType="numberDecimal"
+                            android:letterSpacing="0.1"
+                            android:padding="4dp"
+                            android:textColor="#fff"
+                            android:textColorHint="#fff"
+                            android:textSize="13sp" />
+                    </com.google.android.material.textfield.TextInputLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginRight="6dp"
+                    android:background="@color/colorAccentText"></LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="4dp">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColorHint="@color/colorAccent">
+
+                        <EditText
+                            android:id="@+id/fuelQuantity"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="0dp"
+                            android:background="#00000000"
+                            android:fontFamily="@font/lato_regular"
+                            android:hint="Quantity in Ltr."
+                            android:inputType="numberDecimal"
+                            android:letterSpacing="0.1"
+                            android:nextFocusDown="@+id/billNo"
+                            android:padding="4dp"
+                            android:textColor="#fff"
+                            android:textColorHint="#fff"
+                            android:textSize="13sp" />
+                    </com.google.android.material.textfield.TextInputLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginRight="6dp"
+                    android:background="@color/colorAccentText"></LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="4dp">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColorHint="@color/colorAccent">
+
+                        <EditText
+                            android:id="@+id/fuelAmount"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="0dp"
+                            android:background="#00000000"
+                            android:enabled="false"
+                            android:fontFamily="@font/lato_regular"
+                            android:hint="Amount"
+                            android:inputType="numberDecimal"
+                            android:letterSpacing="0.1"
+                            android:padding="4dp"
+                            android:textColor="#fff"
+                            android:textColorHint="#fff"
+                            android:textSize="13sp" />
+                    </com.google.android.material.textfield.TextInputLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginRight="6dp"
+                    android:background="@color/colorAccentText"></LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="7dp"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.75"
+                        android:fontFamily="@font/lato_regular"
+                        android:text="Select Driver: "
+                        android:textColor="@color/colorAccent"
+                        android:textSize="13sp" />
+
+                    <com.example.hp.superadminitms.utils.SearchableSpinner
+                        android:id="@+id/spnDriver"
+                        android:backgroundTint="@color/colorAccentText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.25"
+                        android:fontFamily="@font/lato_regular"
+                        android:popupBackground="@color/colorPrimaryDark"
+                        android:scrollbars="none" />
+
+                    <!--<Spinner-->
+                    <!--android:id="@+id/spnDriver"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_weight="0.3"-->
+                    <!--android:fontFamily="@font/lato_regular"-->
+                    <!--android:popupBackground="@color/colorPrimaryDark"-->
+                    <!--android:scrollbars="none"-->
+                    <!--android:spinnerMode="dropdown" />-->
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginRight="6dp"
+                    android:background="@color/colorAccentText"></LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="4dp">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColorHint="@color/colorAccent">
+
+                        <EditText
+                            android:id="@+id/billNo"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="0dp"
+                            android:background="#00000000"
+                            android:fontFamily="@font/lato_regular"
+                            android:hint="Bill Number"
+                            android:inputType="number"
+                            android:letterSpacing="0.1"
+                            android:maxLength="18"
+                            android:padding="4dp"
+                            android:textColor="#fff"
+                            android:textColorHint="#fff"
+                            android:textSize="13sp" />
+                    </com.google.android.material.textfield.TextInputLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginRight="6dp"
+                    android:background="@color/colorAccentText"></LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="4dp"
+                    android:visibility="gone">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColorHint="#fff">
+
+                        <EditText
+                            android:id="@+id/couponCode"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="0dp"
+                            android:background="#00000000"
+                            android:fontFamily="@font/lato_regular"
+                            android:hint="Coupon Number"
+                            android:inputType="number"
+                            android:letterSpacing="0.1"
+                            android:maxLength="18"
+                            android:padding="4dp"
+                            android:textColor="#fff"
+                            android:textColorHint="#fff"
+                            android:textSize="13sp" />
+                    </com.google.android.material.textfield.TextInputLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginRight="6dp"
+                    android:background="@color/backColor"
+                    android:visibility="gone"></LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="4dp"
+                    android:visibility="gone">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColorHint="#fff">
+
+                        <EditText
+                            android:id="@+id/logsheetNumber"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="0dp"
+                            android:background="#00000000"
+                            android:fontFamily="@font/lato_regular"
+                            android:hint="Route Name"
+                            android:inputType="text"
+                            android:letterSpacing="0.1"
+                            android:padding="4dp"
+                            android:textColor="#fff"
+                            android:textColorHint="#fff"
+                            android:textSize="13sp" />
+                    </com.google.android.material.textfield.TextInputLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginRight="6dp"
+                    android:background="@color/backColor"
+                    android:baselineAligned="false"
+                    android:visibility="gone"></LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingBottom="10dp"
+                android:paddingLeft="25dp"
+                android:paddingRight="25dp"
+                android:paddingTop="10dp">
+
+                <TextView
+                    android:id="@+id/submit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorAccentText"
+                    android:fontFamily="@font/lato_regular"
+                    android:letterSpacing="0.2"
+                    android:padding="12dp"
+                    android:text="Submit"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
+

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--<color name="colorPrimary">#3d8ca9</color>-->
+    <!--<color name="colorPrimaryDark">#337a94</color>-->
+    <!--<color name="colorAccent">#B0CB1F</color>-->
+
+    <!--<color name="backColor">#B0CB1F</color>-->
+
+    <!--<color name="textColor1">#B0CB1F</color>-->
+    <!--<color name="textColor2">#B0CB1F</color>-->
+
+
+    <color name="white">#f3f3f5</color>
+    <color name="colorDisable">#52585b</color>
+    <color name="colorDisable2">#3c3f41</color>
+
+    <color name="colorPrimary">#2e3031</color>
+    <color name="colorPrimaryDark">#131313</color>
+    <color name="colorAccent">#B0CB1F</color>
+    <color name="colorAccentText">#FF1F72CB</color>
+
+    <color name="backColor">#B0CB1F</color>
+
+    <color name="textColor1">#B0CB1F</color>
+    <color name="textColor2">#B0CB1F</color>
+    <color name="colorError">#f50410</color>
+
+    <color name="colorAccentLight">#bc3b4b1c</color>
+    <!--<color name="colorAccentLight">#8f4d7108</color>-->
+    <!--<color name="colorAccentLight">#8f868c79</color>-->
+
+    <color name="colorTransparent">#00d1ef94</color>
+
+
+
+
+
+
+    <!--<color name="colorPrimary">#d76a6a</color>-->
+    <!--<color name="colorPrimaryDark">#d60f0f</color>-->
+    <!--<color name="colorAccent">#131313</color>-->
+    <!--<color name="colorAccentText">#f5f6f7</color>-->
+    <!--<color name="backColor">#B0CB1F</color>-->
+
+    <!--<color name="textColor1">#B0CB1F</color>-->
+    <!--<color name="textColor2">#B0CB1F</color>-->
+
+</resources>

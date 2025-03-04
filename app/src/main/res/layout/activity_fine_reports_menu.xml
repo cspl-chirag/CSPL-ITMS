@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rootlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical"
+    tools:context="com.example.hp.superadminitms.Activity.Menus.FineReportsMenuActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include layout="@layout/toolbar" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="15dp">
+
+        <LinearLayout
+            android:padding="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:elevation="8dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/llStaffWiseOffenceReportk"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:gravity="center"
+                    android:layout_margin="5dp"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/bg_accent_text_rounded_corner_transparent_8dp"
+                    android:elevation="8dp"
+                    android:paddingStart="10dp"
+                    android:orientation="vertical"
+                    android:padding="4dp">
+
+                    <ImageView
+                        android:visibility="gone"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:padding="8dp"
+                        android:src="@drawable/ic_toolbox"
+                        android:tint="@color/colorAccent" />
+
+                    <TextView
+                        android:text="Staff Wise Offence Report"
+                        android:layout_marginTop="10dp"
+                        android:drawableLeft="@drawable/ic_bullet"
+                        android:drawablePadding="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:textSize="16sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/lato_regular"
+                        android:textColor="@color/colorAccent"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:elevation="8dp"
+                android:orientation="vertical"
+                android:padding="4dp">
+
+                <LinearLayout
+                    android:id="@+id/llStaffWiseOffenceHistory"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_accent_text_rounded_corner_transparent_8dp"
+                    android:elevation="20dp"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingStart="10dp"
+                    android:padding="4dp">
+
+                    <ImageView
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:padding="8dp"
+                        android:src="@drawable/ic_stock"
+                        android:tint="@color/colorAccent"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:text="Staff Wise Offence History"
+                        android:layout_marginTop="10dp"
+                        android:drawableLeft="@drawable/ic_bullet"
+                        android:drawablePadding="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:textSize="16sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/lato_regular"
+                        android:textColor="@color/colorAccent"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

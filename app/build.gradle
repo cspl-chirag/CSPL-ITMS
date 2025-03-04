@@ -1,0 +1,75 @@
+//plugins {
+//    id 'com.android.application'
+//}
+plugins {
+    alias(libs.plugins.android.application)
+}
+
+
+android {
+    namespace 'com.example.hp.superadminitms'
+    compileSdk 34
+
+    defaultConfig {
+        applicationId "com.example.hp.superadminitms"
+        minSdk 24
+        targetSdk 34
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation libs.appcompat
+    implementation libs.material
+    implementation libs.activity
+    implementation libs.constraintlayout
+    testImplementation libs.junit
+    androidTestImplementation libs.ext.junit
+    androidTestImplementation libs.espresso.core
+
+    implementation libs.mpandroidchart
+    implementation libs.retrofit
+    implementation libs.converter.gson
+    implementation libs.speedviewlib
+    implementation libs.gson
+    implementation libs.autostarter
+
+//    implementation libs.firebase.messaging
+//    implementation libs.firebase.core
+//    implementation libs.firebase.iid
+
+
+//    implementation libs.searchablespinnerlibrary
+
+
+
+//    implementation fileTree(include: ['*.jar'], dir: 'libs')
+//    implementation 'com.github.PhilJay:MPAndroidChart:v3.1.1'
+//    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+//    implementation 'com.android.support:design:27.1.1'
+//    implementation 'com.judemanutd:autostarter:1.0.0'
+//    implementation 'com.google.code.gson:gson:2.6.2'
+//    implementation 'com.squareup.retrofit2:retrofit:2.0.2'
+//    implementation 'com.squareup.retrofit2:converter-gson:2.0.2'
+//    implementation 'com.github.anastr:speedviewlib:1.6.1'
+    //noinspection GradleCompatible
+//    implementation 'com.google.firebase:firebase-messaging:17.3.4'
+//    implementation 'com.google.firebase:firebase-core:16.0.1'
+//    implementation 'com.toptoche.searchablespinner:searchablespinnerlibrary:1.3.1'
+}
+//apply plugin: 'com.google.gms.google-services'

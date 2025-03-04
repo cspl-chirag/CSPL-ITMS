@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/rootlayout"
+    android:background="@color/colorPrimary"
+    tools:context="com.example.hp.superadminitms.Activity.StaffListActivity">
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include layout="@layout/toolbar" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:padding="5dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:paddingTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:id="@+id/llDataFound"
+                android:padding="2dp"
+                android:background="@drawable/bg_accent_text_rounded_corner_transparent_8dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:background="@color/colorAccentText"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:weightSum="5"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <LinearLayout
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:layout_weight="1.14"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <LinearLayout
+                                android:gravity="center"
+                                android:orientation="vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+                                <TextView
+                                    android:id="@+id/tvSrNo"
+                                    android:paddingLeft="3dp"
+                                    android:gravity="center"
+                                    android:textSize="12dp"
+                                    android:text="SrNo"
+                                    android:textColor="#FFFFFF"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+                        <View
+                            android:background="@color/colorAccentText"
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"/>
+                        <LinearLayout
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:layout_weight="0.91"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <LinearLayout
+                                android:gravity="center"
+                                android:orientation="vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+                                <TextView
+                                    android:singleLine="true"
+                                    android:gravity="center"
+                                    android:ellipsize="marquee"
+                                    android:paddingLeft="3dp"
+                                    android:textSize="12dp"
+                                    android:text="Member Name"
+                                    android:textColor="#FFFFFF"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+                        <View
+                            android:background="@color/colorAccentText"
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"/>
+                        <LinearLayout
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <LinearLayout
+                                android:gravity="center"
+                                android:orientation="vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+                                <TextView
+                                    android:gravity="center"
+                                    android:id="@+id/tvJoiningDate"
+                                    android:textSize="12dp"
+                                    android:text="Joining\nDate"
+                                    android:textColor="#FFFFFF"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content" />
+                            </LinearLayout>
+                        </LinearLayout>
+                        <View
+                            android:background="@color/colorAccentText"
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"/>
+                        <LinearLayout
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:layout_weight="0.95"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <LinearLayout
+                                android:gravity="center"
+                                android:orientation="vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+                                <TextView
+                                    android:gravity="center"
+                                    android:id="@+id/tvMobileNo"
+                                    android:textSize="12dp"
+                                    android:text="Contact No."
+                                    android:textColor="#FFFFFF"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content" />
+                            </LinearLayout>
+                        </LinearLayout>
+                        <View
+                            android:background="@color/colorAccentText"
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"/>
+                        <LinearLayout
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <LinearLayout
+                                android:gravity="center"
+                                android:orientation="vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+                                <TextView
+                                    android:gravity="center"
+                                    android:id="@+id/tvDesignation"
+                                    android:textSize="12dp"
+                                    android:ellipsize="marquee"
+                                    android:singleLine="true"
+                                    android:text="Designation"
+                                    android:textColor="#FFFFFF"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content" />
+                            </LinearLayout>
+                        </LinearLayout>
+                        <!--<View-->
+                        <!--android:background="@color/colorAccentText"-->
+                        <!--android:layout_width="1dp"-->
+                        <!--android:layout_height="match_parent"/>-->
+                        <!--<LinearLayout-->
+                        <!--android:layout_gravity="center"-->
+                        <!--android:gravity="center"-->
+                        <!--android:layout_weight="1.1"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content">-->
+                        <!--<LinearLayout-->
+                        <!--android:gravity="center"-->
+                        <!--android:orientation="vertical"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content">-->
+                        <!--<TextView-->
+                        <!--android:gravity="center"-->
+                        <!--android:id="@+id/tvQuantity"-->
+                        <!--android:textSize="12dp"-->
+                        <!--android:textColor="@color/colorAccent"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content" />-->
+                        <!--</LinearLayout>-->
+                        <!--</LinearLayout>-->
+                    </LinearLayout>
+                    <View
+                        android:background="@color/colorAccentText"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"/>
+                </LinearLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvStaffMemberList"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/llDataNotFound"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_margin="35dp"
+                    android:background="@drawable/bg_green_rounded_corner_ligh_bg8dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Data Not Found...!"
+                        android:textColor="@color/colorAccentText"
+                        android:textSize="18sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
+

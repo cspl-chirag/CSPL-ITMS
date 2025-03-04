@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rootlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical"
+    tools:context="com.example.hp.superadminitms.Activity.Menus.Stock_ReportsMenuActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include layout="@layout/toolbar" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="15dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:layout_margin="5dp"
+                android:background="@drawable/bg_img"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/llOutwardEntryReport"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/bg_half_gradient_half_transaparent_8dp"
+                    android:elevation="8dp"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="4dp"
+                    android:paddingStart="10dp">
+
+                    <ImageView
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:padding="8dp"
+                        android:src="@drawable/ic_stock"
+                        android:tint="@color/colorAccent"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="10dp"
+                        android:drawableLeft="@drawable/ic_bullet"
+                        android:drawablePadding="10dp"
+                        android:drawableTint="@color/colorAccentText"
+                        android:fontFamily="@font/lato_regular"
+                        android:text="Outward Report"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:layout_margin="5dp"
+                android:background="@drawable/bg_img"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/llPartReplacementReport"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/bg_half_gradient_half_transaparent_8dp"
+                    android:elevation="8dp"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="4dp"
+                    android:paddingStart="10dp">
+
+                    <ImageView
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:padding="8dp"
+                        android:src="@drawable/ic_toolbox"
+                        android:tint="@color/colorAccent"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="10dp"
+                        android:drawableLeft="@drawable/ic_bullet"
+                        android:drawablePadding="10dp"
+                        android:drawableTint="@color/colorAccentText"
+                        android:fontFamily="@font/lato_regular"
+                        android:text="Buswise Part Replaced Details"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:elevation="8dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/bg_img"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/llStaffJoiningKitDetails"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_weight="0.5"
+                        android:background="@drawable/bg_half_gradient_half_transaparent_8dp"
+                        android:elevation="8dp"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="4dp"
+                        android:paddingStart="10dp">
+
+                        <ImageView
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:padding="8dp"
+                            android:src="@drawable/ic_stock"
+                            android:tint="@color/colorAccent"
+                            android:visibility="gone" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginTop="10dp"
+                            android:drawableLeft="@drawable/ic_bullet"
+                            android:drawablePadding="10dp"
+                            android:drawableTint="@color/colorAccentText"
+                            android:fontFamily="@font/lato_regular"
+                            android:text="Staff Joining Kit Details"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

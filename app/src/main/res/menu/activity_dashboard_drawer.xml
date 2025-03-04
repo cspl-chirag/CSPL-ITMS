@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:tooltipText="@color/colorAccent"
+            android:checkable="false"
+            android:id="@+id/nav_Reports"
+            android:icon="@drawable/ic_list"
+            android:iconTint="@color/colorAccent"
+            android:title="Reports" />
+        <item
+            android:tooltipText="@color/colorAccent"
+            android:checkable="false"
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/logout"
+            android:iconTint="@color/colorAccent"
+            android:title="Logout" />
+
+    </group>
+
+
+</menu>
+<!--<item-->
+<!--android:visible="false"-->
+<!--android:tooltipText="@color/colorAccent"-->
+<!--android:checkable="false"-->
+<!--android:id="@+id/nav_routeWiseVehicleInfo"-->
+<!--android:icon="@drawable/bus_logo"-->
+<!--android:iconTint="@color/colorAccent"-->
+<!--android:title="Route Wise Vehicle Info" />-->
+<!--<item-->
+<!--android:visible="false"-->
+<!--android:tooltipText="@color/colorAccent"-->
+<!--android:checkable="false"-->
+<!--android:id="@+id/nav_breakdowns"-->
+<!--android:icon="@drawable/ic_list"-->
+<!--android:iconTint="@color/colorAccent"-->
+<!--android:title="BreakdownList" />-->
+<!--<item-->
+<!--android:visible="false"-->
+<!--android:tooltipText="@color/colorAccent"-->
+<!--android:checkable="false"-->
+<!--android:id="@+id/nav_JobCardList"-->
+<!--android:icon="@drawable/ic_list"-->
+<!--android:iconTint="@color/colorAccent"-->
+<!--android:title="DailyJobCardList" />-->
+<!--<item-->
+<!--android:visible="false"-->
+<!--android:tooltipText="@color/colorAccent"-->
+<!--android:checkable="false"-->
+<!--android:id="@+id/nav_Inventory"-->
+<!--android:icon="@drawable/ic_stock"-->
+<!--android:iconTint="@color/colorAccent"-->
+<!--android:titinventorytory" />-->
+<!--<item-->
+<!--android:tooltipText="@color/colorAccent"-->
+<!--android:checkable="false"-->
+<!--android:id="@+id/nav_Staff"-->
+<!--android:icon="@drawable/ic_staff"-->
+<!--android:iconTint="@color/colorAccent"-->
+<!--android:title="Staff" />-->
+<!--<item-->
+<!--android:tooltipText="@color/colorAccent"-->
+<!--android:checkable="false"-->
+<!--android:id="@+id/nav_Notifications"-->
+<!--android:icon="@drawable/ic_menu_alert"-->
+<!--android:iconTint="@color/colorAccent"-->
+<!--android:title="Notification" />-->

@@ -1,0 +1,1564 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rootlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context="com.example.hp.superadminitms.Fragment.DashboardSAFragment">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_marginBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/lato_light"
+                android:gravity="center"
+                android:padding="4dp"
+                android:text="Current Status"
+                android:textColor="@color/colorAccent"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/bg_green_rounded_corner_8dp"
+                android:orientation="vertical"
+                android:padding="8dp"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvViewID"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/hello_blank_fragment"
+                        android:visibility="gone" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp"
+                        android:weightSum="1">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:layout_marginBottom="10dp"
+                            android:layout_weight="0.5"
+                            android:orientation="horizontal"
+                            android:weightSum="1">
+
+                            <LinearLayout
+                                android:id="@+id/llYesterdayStaffLogInS1"
+                                android:layout_width="match_parent"
+                                android:layout_height="90dp"
+                                android:layout_margin="8dp"
+                                android:layout_weight="0.5"
+                                android:background="@drawable/bg_green_rounded_corner_8dp"
+                                android:elevation="8dp"
+                                android:orientation="vertical"
+                                android:padding="4dp">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/lato_light"
+                                    android:gravity="center"
+                                    android:text="1st Shift\nBus On Road"
+                                    android:textColor="@color/white"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/tvTodayBusOnRoadS1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:fontFamily="@font/lato_light"
+                                    android:gravity="center_horizontal|center_vertical"
+                                    android:padding="4dp"
+                                    android:text="0/0"
+                                    android:textColor="@color/colorAccent"
+                                    android:textSize="28sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/llYesterdayStaffLogInS2"
+                                android:layout_width="match_parent"
+                                android:layout_height="90dp"
+                                android:layout_margin="8dp"
+                                android:layout_weight="0.5"
+                                android:background="@drawable/bg_green_rounded_corner_8dp"
+                                android:elevation="8dp"
+                                android:orientation="vertical"
+                                android:padding="4dp">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/lato_light"
+                                    android:gravity="center"
+                                    android:text="2nd Shift\nBus On Road"
+                                    android:textColor="@color/white"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/tvTodayBusOnRoadS2"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:fontFamily="@font/lato_light"
+                                    android:gravity="center_horizontal|center_vertical"
+                                    android:padding="4dp"
+                                    android:text="0/0"
+                                    android:textColor="@color/colorAccent"
+                                    android:textSize="28sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_weight="0.5"
+                        android:orientation="vertical"
+                        android:weightSum="1">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:background="@drawable/bg_green_rounded_corner_8dp"
+                            android:elevation="8dp"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:weightSum="3">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:fontFamily="@font/lato_light"
+                                        android:gravity="center_horizontal|center_vertical"
+                                        android:padding="4dp"
+                                        android:text="1st Bus"
+                                        android:textColor="@color/white"
+                                        android:textSize="14sp"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:id="@+id/tvTodayFirstBus"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:fontFamily="@font/lato_light"
+                                        android:gravity="center_horizontal|center_vertical"
+                                        android:padding="4dp"
+                                        android:text="0"
+                                        android:textColor="@color/colorAccent"
+                                        android:textSize="14sp"
+                                        android:textStyle="bold" />
+                                </LinearLayout>
+
+                                <View
+                                    android:layout_width="1dp"
+                                    android:layout_height="match_parent"
+                                    android:background="@color/colorAccent" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:fontFamily="@font/lato_light"
+                                        android:gravity="center_horizontal|center_vertical"
+                                        android:padding="4dp"
+                                        android:text="Login Time"
+                                        android:textColor="@color/white"
+                                        android:textSize="14sp"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:id="@+id/tvTodayFirstBusTime"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:fontFamily="@font/lato_light"
+                                        android:gravity="center_horizontal|center_vertical"
+                                        android:padding="4dp"
+                                        android:text="0"
+                                        android:textColor="@color/colorAccent"
+                                        android:textSize="14sp"
+                                        android:textStyle="bold" />
+                                </LinearLayout>
+
+                                <View
+                                    android:layout_width="1dp"
+                                    android:layout_height="match_parent"
+                                    android:background="@color/colorAccent" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:fontFamily="@font/lato_light"
+                                        android:gravity="center_horizontal|center_vertical"
+                                        android:padding="4dp"
+                                        android:text="Route No. "
+                                        android:textColor="@color/white"
+                                        android:textSize="14sp"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:id="@+id/tvTodayFirstBusRoute"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:fontFamily="@font/lato_light"
+                                        android:gravity="center_horizontal|center_vertical"
+                                        android:padding="4dp"
+                                        android:text="0"
+                                        android:textColor="@color/colorAccent"
+                                        android:textSize="14sp"
+                                        android:textStyle="bold" />
+                                </LinearLayout>
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:background="@color/colorAccent" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:weightSum="3">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:fontFamily="@font/lato_light"
+                                        android:gravity="center_horizontal|center_vertical"
+                                        android:padding="4dp"
+                                        android:text="Last Bus"
+                                        android:textColor="@color/white"
+                                        android:textSize="14sp"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:id="@+id/tvTodayLastBus"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:fontFamily="@font/lato_light"
+                                        android:gravity="center_horizontal|center_vertical"
+                                        android:padding="4dp"
+                                        android:text="0"
+                                        android:textColor="@color/colorAccent"
+                                        android:textSize="14sp"
+                                        android:textStyle="bold" />
+                                </LinearLayout>
+
+                                <View
+                                    android:layout_width="1dp"
+                                    android:layout_height="match_parent"
+                                    android:background="@color/colorAccent" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:fontFamily="@font/lato_light"
+                                        android:gravity="center_horizontal|center_vertical"
+                                        android:padding="4dp"
+                                        android:text="Login Time"
+                                        android:textColor="@color/white"
+                                        android:textSize="14sp"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:id="@+id/tvTodayLastBusTime"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:fontFamily="@font/lato_light"
+                                        android:gravity="center_horizontal|center_vertical"
+                                        android:padding="4dp"
+                                        android:text="0"
+                                        android:textColor="@color/colorAccent"
+                                        android:textSize="14sp"
+                                        android:textStyle="bold" />
+                                </LinearLayout>
+
+                                <View
+                                    android:layout_width="1dp"
+                                    android:layout_height="match_parent"
+                                    android:background="@color/colorAccent" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:fontFamily="@font/lato_light"
+                                        android:gravity="center_horizontal|center_vertical"
+                                        android:padding="4dp"
+                                        android:text="Route No. "
+                                        android:textColor="@color/white"
+                                        android:textSize="14sp"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:id="@+id/tvTodayLastBusRoute"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:fontFamily="@font/lato_light"
+                                        android:gravity="center_horizontal|center_vertical"
+                                        android:padding="4dp"
+                                        android:text="0"
+                                        android:textColor="@color/colorAccent"
+                                        android:textSize="14sp"
+                                        android:textStyle="bold" />
+                                </LinearLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingLeft="6dp"
+                        android:paddingRight="6dp"
+                        android:visibility="gone">
+
+                        <LinearLayout
+                            android:id="@+id/llYesterdayAVGS1"
+                            android:layout_width="match_parent"
+                            android:layout_height="93dp"
+                            android:layout_margin="8dp"
+                            android:layout_weight="3"
+                            android:background="@drawable/bg_green_rounded_corner_8dp"
+                            android:elevation="8dp"
+                            android:orientation="vertical"
+                            android:padding="4dp">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/lato_light"
+                                android:gravity="center"
+                                android:text="Bus Average"
+                                android:textColor="@color/white"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/tvYesterdayAVGS1"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:fontFamily="@font/lato_light"
+                                android:gravity="center_horizontal|center_vertical"
+                                android:padding="4dp"
+                                android:text="0"
+                                android:textColor="@color/colorAccent"
+                                android:textSize="19sp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/llYesterdayBreakDownS1"
+                            android:layout_width="match_parent"
+                            android:layout_height="93dp"
+                            android:layout_margin="8dp"
+                            android:layout_weight="3"
+                            android:background="@drawable/bg_green_rounded_corner_8dp"
+                            android:elevation="8dp"
+                            android:orientation="vertical"
+                            android:padding="4dp">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/lato_light"
+                                android:gravity="center"
+                                android:text="Breakdown"
+                                android:textColor="@color/white"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/tvYesterdayBreakDownS1"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:fontFamily="@font/lato_light"
+                                android:gravity="center_horizontal|center_vertical"
+                                android:text="0/0"
+                                android:textColor="@color/colorAccent"
+                                android:textSize="19sp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/llYesterdayRunKMS1"
+                            android:layout_width="match_parent"
+                            android:layout_height="93dp"
+                            android:layout_margin="8dp"
+                            android:layout_weight="3"
+                            android:background="@drawable/bg_green_rounded_corner_8dp"
+                            android:elevation="8dp"
+                            android:orientation="vertical"
+                            android:padding="4dp">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/lato_light"
+                                android:gravity="center"
+                                android:text="Total RunKm"
+                                android:textColor="@color/white"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/tvYesterdayRunKmS1"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:fontFamily="@font/lato_light"
+                                android:gravity="center_horizontal|center_vertical"
+                                android:padding="4dp"
+                                android:text="0"
+                                android:textColor="@color/colorAccent"
+                                android:textSize="19sp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/llRouteWiseBusOnRoad"
+                android:clickable="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:orientation="vertical"
+                android:padding="8dp"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp">
+                <!--android:background="@drawable/bg_green_rounded_corner_8dp"-->
+                <LinearLayout
+                    android:gravity="center"
+                    android:weightSum="1"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_weight="0.912"
+                        android:src="@drawable/ic_bullet"
+                        android:tint="@color/colorAccentText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_weight="0.1"
+                    android:id="@+id/tvTodayBusOnRoadLable"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableRight="@drawable/ic_expandmore"
+                    android:fontFamily="@font/lato_regular"
+                    android:gravity="center"
+                    android:text="Route Wise Bus On Road"
+                    android:textColor="@color/colorAccentText"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llRouteWiseBusOnRoadExpanded"
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:orientation="vertical"
+                        android:weightSum="1">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginRight="8dp"
+                            android:layout_marginTop="8dp"
+                            android:background="@drawable/bg_accent_text_rounded_corner_transparent_8dp"
+                            android:elevation="8dp"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/colorAccentText"
+                                android:orientation="horizontal"
+                                android:weightSum="4">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_weight="1.23"
+                                    android:gravity="center">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center"
+                                        android:orientation="vertical">
+
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:gravity="center"
+                                            android:text="Sr"
+                                            android:textColor="@color/white"
+                                            android:textSize="11dp" />
+
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+                                <View
+                                    android:layout_width="1dp"
+                                    android:layout_height="match_parent"
+                                    android:background="@color/colorAccentText" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_weight="1.09"
+                                    android:gravity="center">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center"
+                                        android:orientation="vertical">
+
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:gravity="center"
+                                            android:text="Route No"
+                                            android:textColor="@color/white"
+                                            android:textSize="11dp" />
+                                    </LinearLayout>
+                                </LinearLayout>
+
+                                <View
+                                    android:layout_width="1dp"
+                                    android:layout_height="match_parent"
+                                    android:background="@color/colorAccentText" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_weight="0.8"
+                                    android:gravity="center">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center"
+                                        android:orientation="vertical">
+
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:gravity="center"
+                                            android:text="Route Name"
+                                            android:textColor="@color/white"
+                                            android:textSize="11dp" />
+
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+                                <View
+                                    android:layout_width="1dp"
+                                    android:layout_height="match_parent"
+                                    android:background="@color/colorAccentText" />
+
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0.9">
+                                    <TextView
+                                        android:text="Bus Count"
+                                        android:textSize="11dp"
+                                        android:gravity="center"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:textColor="@color/white"/>
+                                    <LinearLayout
+                                        android:weightSum="1"
+                                        android:orientation="horizontal"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content">
+                                        <TextView
+                                            android:textSize="11dp"
+                                            android:layout_weight="0.5"
+                                            android:gravity="center"
+                                            android:text="Today"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:textColor="@color/white"/>
+                                        <TextView
+                                            android:textSize="11dp"
+                                            android:layout_weight="0.5"
+                                            android:text="Yesterday"
+                                            android:gravity="center"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:textColor="@color/white"/>
+                                    </LinearLayout>
+                                </LinearLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <androidx.recyclerview.widget.RecyclerView
+                                    android:id="@+id/rvRouteInfo"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:padding="1dp" />
+                                <LinearLayout
+                                    android:background="@color/colorAccentText"
+                                    android:weightSum="3"
+                                    android:orientation="horizontal"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+                                    <TextView
+                                        android:gravity="center"
+                                        android:layout_weight="0.49"
+                                        android:text="Total"
+                                        android:textColor="@color/white"
+                                        android:textSize="12dp"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content" />
+                                    <TextView
+                                        android:id="@+id/tvTotalTodayBusCount"
+                                        android:gravity="center"
+                                        android:layout_weight="1.25"
+                                        android:textColor="@color/white"
+                                        android:textSize="12dp"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content" />
+                                    <TextView
+                                        android:id="@+id/tvTotalYesterdayBusCount"
+                                        android:gravity="center"
+                                        android:layout_weight="1.25"
+                                        android:textColor="@color/white"
+                                        android:textSize="12dp"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content" />
+                                </LinearLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="4dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/lato_light"
+                    android:gravity="center"
+                    android:padding="4dp"
+                    android:text="Yesterday Status"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/bg_green_rounded_corner_8dp"
+                android:orientation="vertical"
+                android:padding="8dp"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:orientation="horizontal"
+                            android:weightSum="1">
+
+                            <LinearLayout
+                                android:id="@+id/llYesterdayStaffLogOutS1"
+                                android:layout_width="match_parent"
+                                android:layout_height="90dp"
+                                android:layout_margin="8dp"
+                                android:layout_weight="0.5"
+                                android:background="@drawable/bg_green_rounded_corner_8dp"
+                                android:elevation="8dp"
+                                android:orientation="vertical"
+                                android:padding="4dp">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/lato_light"
+                                    android:gravity="center"
+                                    android:text="1st Shift\nBus On Road"
+                                    android:textColor="@color/white"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/tvYesterdayBusOnRoadS1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:fontFamily="@font/lato_light"
+                                    android:gravity="center_horizontal|center_vertical"
+                                    android:padding="4dp"
+                                    android:text="0/0"
+                                    android:textColor="@color/colorAccent"
+                                    android:textSize="28sp"
+                                    android:textStyle="bold" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/llYesterdayStaffLogOutS2"
+                                android:layout_width="match_parent"
+                                android:layout_height="90dp"
+                                android:layout_margin="8dp"
+                                android:layout_weight="0.5"
+                                android:background="@drawable/bg_green_rounded_corner_8dp"
+                                android:elevation="8dp"
+                                android:orientation="vertical"
+                                android:padding="4dp">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/lato_light"
+                                    android:gravity="center"
+                                    android:text="2nd Shift\nBus On Road"
+                                    android:textColor="@color/white"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/tvYesterdayBusOnRoadS2"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:fontFamily="@font/lato_light"
+                                    android:gravity="center_horizontal|center_vertical"
+                                    android:padding="4dp"
+                                    android:text="0/0"
+                                    android:textColor="@color/colorAccent"
+                                    android:textSize="28sp"
+                                    android:textStyle="bold" />
+
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_weight="0.5"
+                        android:orientation="vertical"
+                        android:weightSum="1">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:background="@drawable/bg_green_rounded_corner_8dp"
+                            android:elevation="8dp"
+                            android:orientation="vertical">
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:weightSum="3">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:fontFamily="@font/lato_light"
+                                        android:gravity="center_horizontal|center_vertical"
+                                        android:padding="4dp"
+                                        android:text="1st Bus"
+                                        android:textColor="@color/white"
+                                        android:textSize="14sp"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:id="@+id/tvYesterdayFirstBus"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:fontFamily="@font/lato_light"
+                                        android:gravity="center_horizontal|center_vertical"
+                                        android:padding="4dp"
+                                        android:text="0"
+                                        android:textColor="@color/colorAccent"
+                                        android:textSize="14sp"
+                                        android:textStyle="bold" />
+                                </LinearLayout>
+
+                                <View
+                                    android:layout_width="1dp"
+                                    android:layout_height="match_parent"
+                                    android:background="@color/colorAccent" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:fontFamily="@font/lato_light"
+                                        android:gravity="center_horizontal|center_vertical"
+                                        android:padding="4dp"
+                                        android:text="Login Time"
+                                        android:textColor="@color/white"
+                                        android:textSize="14sp"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:id="@+id/tvYesterdayFirstBusTime"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:fontFamily="@font/lato_light"
+                                        android:gravity="center_horizontal|center_vertical"
+                                        android:padding="4dp"
+                                        android:text="0"
+                                        android:textColor="@color/colorAccent"
+                                        android:textSize="14sp"
+                                        android:textStyle="bold" />
+                                </LinearLayout>
+
+                                <View
+                                    android:layout_width="1dp"
+                                    android:layout_height="match_parent"
+                                    android:background="@color/colorAccent" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:fontFamily="@font/lato_light"
+                                        android:gravity="center_horizontal|center_vertical"
+                                        android:padding="4dp"
+                                        android:text="Route No. "
+                                        android:textColor="@color/white"
+                                        android:textSize="14sp"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:id="@+id/tvYesterdayFirstBusRoute"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:fontFamily="@font/lato_light"
+                                        android:gravity="center_horizontal|center_vertical"
+                                        android:padding="4dp"
+                                        android:text="0"
+                                        android:textColor="@color/colorAccent"
+                                        android:textSize="14sp"
+                                        android:textStyle="bold" />
+                                </LinearLayout>
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:background="@color/colorAccent" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:weightSum="3">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:fontFamily="@font/lato_light"
+                                        android:gravity="center_horizontal|center_vertical"
+                                        android:padding="4dp"
+                                        android:text="Last Bus"
+                                        android:textColor="@color/white"
+                                        android:textSize="14sp"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:id="@+id/tvYesterdayLastBus"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:fontFamily="@font/lato_light"
+                                        android:gravity="center_horizontal|center_vertical"
+                                        android:padding="4dp"
+                                        android:text="0"
+                                        android:textColor="@color/colorAccent"
+                                        android:textSize="14sp"
+                                        android:textStyle="bold" />
+                                </LinearLayout>
+
+                                <View
+                                    android:layout_width="1dp"
+                                    android:layout_height="match_parent"
+                                    android:background="@color/colorAccent" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:fontFamily="@font/lato_light"
+                                        android:gravity="center_horizontal|center_vertical"
+                                        android:padding="4dp"
+                                        android:text="Login Time"
+                                        android:textColor="@color/white"
+                                        android:textSize="14sp"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:id="@+id/tvYesterdayLastBusTime"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:fontFamily="@font/lato_light"
+                                        android:gravity="center_horizontal|center_vertical"
+                                        android:padding="4dp"
+                                        android:text="0"
+                                        android:textColor="@color/colorAccent"
+                                        android:textSize="14sp"
+                                        android:textStyle="bold" />
+                                </LinearLayout>
+
+                                <View
+                                    android:layout_width="1dp"
+                                    android:layout_height="match_parent"
+                                    android:background="@color/colorAccent" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:fontFamily="@font/lato_light"
+                                        android:gravity="center_horizontal|center_vertical"
+                                        android:padding="4dp"
+                                        android:text="Route No. "
+                                        android:textColor="@color/white"
+                                        android:textSize="14sp"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:id="@+id/tvYesterdayLastBusRoute"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:fontFamily="@font/lato_light"
+                                        android:gravity="center_horizontal|center_vertical"
+                                        android:padding="4dp"
+                                        android:text="0"
+                                        android:textColor="@color/colorAccent"
+                                        android:textSize="14sp"
+                                        android:textStyle="bold" />
+                                </LinearLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="6dp"
+                    android:paddingRight="6dp">
+
+                    <LinearLayout
+                        android:id="@+id/llYesterdayAVGS2"
+                        android:layout_width="match_parent"
+                        android:layout_height="90dp"
+                        android:layout_margin="8dp"
+                        android:layout_weight="3"
+                        android:background="@drawable/bg_green_rounded_corner_8dp"
+                        android:elevation="8dp"
+                        android:orientation="vertical"
+                        android:padding="4dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/lato_light"
+                            android:gravity="center"
+                            android:text="Average"
+                            android:textColor="@color/white"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tvAverage"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:fontFamily="@font/lato_light"
+                            android:gravity="center_horizontal|center_vertical"
+                            android:padding="4dp"
+                            android:text="0"
+                            android:textColor="@color/colorAccent"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/llYesterdayBreakDownS2"
+                        android:layout_width="match_parent"
+                        android:layout_height="90dp"
+                        android:layout_margin="8dp"
+                        android:layout_weight="3"
+                        android:background="@drawable/bg_green_rounded_corner_8dp"
+                        android:elevation="8dp"
+                        android:orientation="vertical"
+                        android:padding="4dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/lato_light"
+                            android:gravity="center"
+                            android:text="Breakdown"
+                            android:textColor="@color/white"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tvBreakdown"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:fontFamily="@font/lato_light"
+                            android:gravity="center_horizontal|center_vertical"
+                            android:text="0/0"
+                            android:textColor="@color/colorAccent"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/llYesterdayRunKMS2"
+                        android:layout_width="match_parent"
+                        android:layout_height="90dp"
+                        android:layout_margin="8dp"
+                        android:layout_weight="3"
+                        android:background="@drawable/bg_green_rounded_corner_8dp"
+                        android:elevation="8dp"
+                        android:orientation="vertical"
+                        android:padding="4dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/lato_light"
+                            android:gravity="center"
+                            android:text="Total RunKm"
+                            android:textColor="@color/white"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tvQuantity"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:fontFamily="@font/lato_light"
+                            android:gravity="center_horizontal|center_vertical"
+                            android:padding="4dp"
+                            android:text="0"
+                            android:textColor="@color/colorAccent"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="6dp"
+                    android:paddingRight="6dp"
+                    android:weightSum="3">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="90dp"
+                        android:layout_margin="8dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_green_rounded_corner_8dp"
+                        android:elevation="8dp"
+                        android:orientation="vertical"
+                        android:padding="4dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/lato_light"
+                            android:gravity="center"
+                            android:text="Fuel Amt.\n"
+                            android:textColor="@color/white"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tvFuelPrice"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:fontFamily="@font/lato_light"
+                            android:gravity="center_horizontal|center_vertical"
+                            android:padding="4dp"
+                            android:text="0"
+                            android:textColor="@color/colorAccent"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="90dp"
+                        android:layout_margin="8dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_green_rounded_corner_8dp"
+                        android:elevation="8dp"
+                        android:orientation="vertical"
+                        android:padding="4dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/lato_light"
+                            android:gravity="center"
+                            android:text="Fuel Rate\n"
+                            android:textColor="@color/white"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tvFuelPricePerLiter"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:fontFamily="@font/lato_light"
+                            android:gravity="center_horizontal|center_vertical"
+                            android:padding="4dp"
+                            android:text="0"
+                            android:textColor="@color/colorAccent"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="90dp"
+                        android:layout_margin="8dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_green_rounded_corner_8dp"
+                        android:elevation="8dp"
+                        android:orientation="vertical"
+                        android:padding="4dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/lato_light"
+                            android:gravity="center"
+                            android:text="No. of Accident"
+                            android:textColor="@color/white"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tvNoAccident"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:fontFamily="@font/lato_light"
+                            android:gravity="center_horizontal|center_vertical"
+                            android:padding="4dp"
+                            android:text="0"
+                            android:textColor="@color/colorAccent"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:weightSum="1">
+
+                <LinearLayout
+                    android:id="@+id/llFuelConsumption"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="4dp"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/bg_green_rounded_corner_8dp"
+                    android:elevation="8dp"
+                    android:orientation="vertical"
+                    android:padding="4dp"
+                    android:paddingBottom="2dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/lato_light"
+                        android:gravity="center"
+                        android:padding="3dp"
+                        android:text="Fuel Consumption"
+                        android:textColor="@color/white"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <com.github.anastr.speedviewlib.PointerSpeedometer
+                    android:id="@+id/SMFuels"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:sv_backgroundCircleColor="@color/colorAccentText"
+                    app:sv_centerCircleColor="@color/colorAccent"
+                    app:sv_indicatorColor="@color/colorAccent"
+                    app:sv_indicatorLightColor="@color/colorAccent"
+                    app:sv_markColor="@color/colorAccent"
+                    app:sv_maxSpeed="20000"
+                    app:sv_pointerColor="@color/colorAccent"
+                    app:sv_speedTextColor="@color/colorAccent"
+                    app:sv_speedTextSize="16sp"
+                    app:sv_speedometerColor="@color/colorAccent"
+                    app:sv_textColor="@color/colorAccent"
+                    app:sv_unit="Ltr."
+                    app:sv_unitTextColor="@color/colorAccent"
+                    app:sv_unitUnderSpeedText="true"
+                    app:sv_withIndicatorLight="true"
+                    app:sv_withTremble="false" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llYesterdayAVG"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/bg_green_rounded_corner_8dp"
+                    android:elevation="8dp"
+                    android:orientation="vertical"
+                    android:padding="4dp"
+                    android:paddingBottom="2dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/lato_light"
+                        android:gravity="center"
+                        android:padding="3dp"
+                        android:text="Average"
+                        android:textColor="@color/white"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <com.github.anastr.speedviewlib.PointerSpeedometer
+
+                    android:id="@+id/SMAVG"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:sv_backgroundCircleColor="@color/colorAccentText"
+                    app:sv_centerCircleColor="@color/colorAccent"
+                    app:sv_indicatorColor="@color/colorAccent"
+                    app:sv_indicatorLightColor="@color/colorAccent"
+                    app:sv_markColor="@color/colorAccent"
+                    app:sv_maxSpeed="50"
+                    app:sv_pointerColor="@color/colorAccent"
+                    app:sv_speedTextColor="@color/colorAccent"
+                    app:sv_speedTextSize="16sp"
+                    app:sv_speedometerColor="@color/colorAccent"
+                    app:sv_textColor="@color/colorAccent"
+                    app:sv_unit="KM/Ltr."
+                    app:sv_unitTextColor="@color/colorAccent"
+                    app:sv_unitUnderSpeedText="true"
+                    app:sv_withIndicatorLight="true"
+                    app:sv_withTremble="false" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="201dp"
+                android:layout_marginBottom="16dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:weightSum="1">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_green_rounded_corner_8dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:fontFamily="@font/lato_light"
+                        android:gravity="center"
+                        android:text="Last 7 days Running Kms."
+                        android:textColor="@color/white"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <com.github.mikephil.charting.charts.BarChart
+                        android:id="@+id/barChartRunKm"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="3dp"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_marginTop="3dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="201dp"
+                android:layout_marginBottom="16dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:weightSum="1">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_green_rounded_corner_8dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:fontFamily="@font/lato_light"
+                        android:gravity="center"
+                        android:text="Last 7 days Fuel Consumption"
+                        android:textColor="@color/white"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <com.github.mikephil.charting.charts.BarChart
+                        android:id="@+id/barChartFuel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="3dp"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_marginTop="3dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="201dp"
+                android:layout_marginBottom="16dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:weightSum="1">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_green_rounded_corner_8dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:fontFamily="@font/lato_light"
+                        android:gravity="center"
+                        android:text="Last 7 days Bus On Road"
+                        android:textColor="@color/white"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <com.github.mikephil.charting.charts.BarChart
+                        android:id="@+id/barChartBusOnRoad"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="3dp"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_marginTop="3dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</FrameLayout>

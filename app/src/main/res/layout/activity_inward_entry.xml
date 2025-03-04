@@ -1,0 +1,477 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rootlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    tools:context="com.example.hp.superadminitms.Activity.Stock_InwardEntryActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include layout="@layout/toolbar" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="4dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="4dp">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColorHint="@color/colorAccent">
+
+                    <EditText
+                        android:id="@+id/etBillNo"
+                        android:nextFocusDown="@id/etInwardDate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="0dp"
+                        android:background="#00000000"
+                        android:fontFamily="@font/lato_regular"
+                        android:hint="Bill/Challan No."
+                        android:inputType="text"
+                        android:letterSpacing="0.1"
+                        android:padding="4dp"
+                        android:singleLine="true"
+                        android:textColor="#fff"
+                        android:textColorHint="#fff"
+                        android:textSize="13sp" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorAccentText"></LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical"
+                    android:padding="4dp">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColorHint="@color/colorAccent">
+
+                        <EditText
+                            android:id="@+id/etInwardDate"
+                            android:nextFocusDown="@id/etInwardTime"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="0dp"
+                            android:background="#00000000"
+                            android:fontFamily="@font/lato_regular"
+                            android:hint="Inward Date"
+                            android:letterSpacing="0.1"
+                            android:maxLines="1"
+                            android:padding="4dp"
+                            android:singleLine="true"
+                            android:textColor="#fff"
+                            android:textColorHint="#fff"
+                            android:textSize="13sp" />
+                    </com.google.android.material.textfield.TextInputLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical"
+
+                    android:padding="4dp">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColorHint="@color/colorAccent">
+
+                        <EditText
+                            android:id="@+id/etInwardTime"
+                            android:nextFocusDown="@id/etCourierLRNo"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="0dp"
+                            android:background="#00000000"
+                            android:fontFamily="@font/lato_regular"
+                            android:hint="Inward Time"
+                            android:letterSpacing="0.1"
+                            android:maxLines="1"
+                            android:padding="4dp"
+                            android:singleLine="true"
+                            android:textColor="#fff"
+                            android:textColorHint="#fff"
+                            android:textSize="13sp" />
+                    </com.google.android.material.textfield.TextInputLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorAccentText"></LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="8dp"
+                android:weightSum="1">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.42"
+                    android:fontFamily="@font/lato_regular"
+                    android:text="Store :"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="13dp" />
+
+                <com.example.hp.superadminitms.utils.SearchableSpinner
+                    android:id="@+id/spPartStore"
+                    android:nextFocusDown="@id/spCourierAgency"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.23"
+                    android:backgroundTint="@color/colorAccentText"
+                    android:fontFamily="@font/lato_light"
+                    android:scrollbars="none"
+                    android:spinnerMode="dropdown" />
+                <LinearLayout
+                    android:layout_weight="0.35"
+                    android:layout_gravity="right"
+                    android:id="@+id/llAddNewStore"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_accent_text_rounded_corner_transparent_8dp"
+                    android:gravity="right"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:textSize="12sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/ic_add_part"
+                        android:drawableTint="@color/colorAccentText"
+                        android:gravity="left|center_vertical"
+                        android:text="New Store"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorAccent" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorAccentText"></LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="8dp"
+                android:weightSum="1">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.68"
+                    android:fontFamily="@font/lato_regular"
+                    android:text="Courier Agency :"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="13dp" />
+
+                <com.example.hp.superadminitms.utils.SearchableSpinner
+                    android:id="@+id/spCourierAgency"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.29"
+                    android:backgroundTint="@color/colorAccentText"
+                    android:fontFamily="@font/lato_light"
+                    android:scrollbars="none"
+                    android:spinnerMode="dropdown" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorAccentText"></LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="4dp">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColorHint="@color/colorAccent">
+
+                    <EditText
+                        android:id="@+id/etCourierLRNo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="0dp"
+                        android:background="#00000000"
+                        android:fontFamily="@font/lato_regular"
+                        android:hint="Courier LR No."
+                        android:inputType="text"
+                        android:nextFocusDown="@id/etCheckedBy"
+                        android:letterSpacing="0.1"
+                        android:padding="4dp"
+                        android:singleLine="true"
+                        android:textColor="#fff"
+                        android:textColorHint="#fff"
+                        android:textSize="13sp" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorAccentText"></LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="2dp">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvParts"
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:scrollbarFadeDuration="100000"
+                    android:scrollbarSize="5dp"
+                    android:scrollbarThumbVertical="@color/colorAccent"
+                    android:scrollbars="vertical" />
+                <LinearLayout
+                    android:layout_gravity="right"
+                    android:id="@+id/llAddNewPart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_accent_text_rounded_corner_transparent_8dp"
+                    android:gravity="right"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:textSize="12dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/ic_add_part"
+                        android:drawableTint="@color/colorAccentText"
+                        android:gravity="left|center_vertical"
+                        android:text="New Part"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorAccent" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="4dp">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColorHint="@color/colorAccent">
+
+                    <EditText
+                        android:enabled="false"
+                        android:id="@+id/etManufacturerName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="0dp"
+                        android:background="#00000000"
+                        android:fontFamily="@font/lato_regular"
+                        android:hint="Manufacturer Name"
+                        android:inputType="text"
+                        android:letterSpacing="0.1"
+                        android:padding="4dp"
+                        android:singleLine="true"
+                        android:textColor="#fff"
+                        android:textColorHint="#fff"
+                        android:textSize="13sp" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorAccentText"></LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="4dp">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColorHint="@color/colorAccent">
+
+                    <EditText
+                        android:id="@+id/etCheckedBy"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="0dp"
+                        android:background="#00000000"
+                        android:fontFamily="@font/lato_regular"
+                        android:hint="Checked By"
+                        android:inputType="text"
+                        android:letterSpacing="0.1"
+                        android:padding="4dp"
+                        android:singleLine="true"
+                        android:textColor="#fff"
+                        android:textColorHint="#fff"
+                        android:textSize="13sp" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorAccentText"></LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="4dp">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColorHint="@color/colorAccent">
+
+                    <EditText
+                        android:id="@+id/etBillAmount"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="0dp"
+                        android:background="#00000000"
+                        android:fontFamily="@font/lato_regular"
+                        android:hint="Bill Amount"
+                        android:nextFocusDown="@id/etRemark"
+                        android:inputType="number"
+                        android:letterSpacing="0.1"
+                        android:padding="4dp"
+                        android:singleLine="true"
+                        android:textColor="#fff"
+                        android:textColorHint="#fff"
+                        android:textSize="13sp" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorAccentText"></LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="4dp">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColorHint="@color/colorAccent">
+
+                    <EditText
+                        android:id="@+id/etRemark"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="0dp"
+                        android:background="#00000000"
+                        android:fontFamily="@font/lato_regular"
+                        android:hint="Remark"
+                        android:inputType="text"
+                        android:letterSpacing="0.1"
+                        android:padding="4dp"
+                        android:singleLine="true"
+                        android:textColor="#fff"
+                        android:textColorHint="#fff"
+                        android:textSize="13sp" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorAccentText"></LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingBottom="10dp"
+                android:paddingLeft="25dp"
+                android:paddingRight="25dp"
+                android:paddingTop="10dp">
+
+                <TextView
+                    android:id="@+id/btnSubmit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorAccentText"
+                    android:fontFamily="@font/lato_regular"
+                    android:letterSpacing="0.2"
+                    android:padding="12dp"
+                    android:text="Submit"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

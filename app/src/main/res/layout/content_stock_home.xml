@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/toolbar"
+    android:id="@+id/rootlayout"
+    android:background="@color/colorPrimary"
+    tools:context="com.example.hp.superadminitms.Activity.Dashboards.Stock_Dashboard"
+
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_weight="0.5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="8dp"
+                android:id="@+id/llInventoryManagement"
+                android:elevation="8dp"
+                android:padding="4dp"
+                android:background="@drawable/bg_accent_rounded_corner_8dp">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:padding="8dp"
+                    android:tint="@color/colorAccent"
+                    android:src="@drawable/ic_stock"
+                    android:layout_weight="1"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:text="Stock\nManagement"
+                    android:fontFamily="@font/lato_light"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/white"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_weight="0.5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="8dp"
+                android:id="@+id/llInventoryReports"
+                android:elevation="8dp"
+                android:padding="4dp"
+                android:background="@drawable/bg_accent_rounded_corner_8dp">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:padding="8dp"
+                    android:tint="@color/colorAccent"
+                    android:src="@drawable/ic_stock"
+                    android:layout_weight="1"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:text="Stock Movement\nReports"
+                    android:fontFamily="@font/lato_light"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/white"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="29dp"
+                android:layout_alignParentBottom="true"
+                android:layout_below="@id/llCopyRight"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/lato_regular"
+                android:gravity="center"
+                android:letterSpacing="0.1"
+                android:text="@string/app_version"
+                android:textColor="@color/colorAccent"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:id="@+id/llCopyRight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_gravity="center"
+                    android:drawableTint="@color/colorAccent"
+                    android:fontFamily="@font/lato_regular"
+                    android:gravity="center"
+                    android:letterSpacing="0.1"
+                    android:maxLines="2"
+                    android:text="Powered by: "
+                    android:textColor="@color/colorAccent"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_gravity="center"
+                    android:drawableLeft="@drawable/ic_copyright"
+                    android:drawableTint="@color/colorAccent"
+                    android:fontFamily="@font/lato_regular"
+                    android:gravity="center"
+                    android:letterSpacing="0.1"
+                    android:maxLines="2"
+                    android:text=" Cursor Soft Pvt. Ltd."
+                    android:textColor="@color/colorAccent"
+                    android:textSize="12sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
